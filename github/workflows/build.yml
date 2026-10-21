@@ -16,7 +16,7 @@ jobs:
           pip install pyinstaller
       - name: Build with PyInstaller
         run: |
-          pyinstaller --onefile --name "Journal" app.py
+          pyinstaller --onefile --windowed --name "Journal" app.py
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
